@@ -1,0 +1,38 @@
+# Nested Git project: manage it inside repo_lvbobalun itself.
+repo_lvbobalun/
+
+# Temporary extraction artifacts.
+tmp_extract/
+tmp_*.txt
+ultraem_*.txt
+
+# Screenshots and visual probes generated during debugging.
+*.png
+*.jpg
+*.jpeg
+*.bmp
+
+# Logs, caches, and editor/runtime noise.
+*.log
+*.tmp
+*.bak
+*.bak.*
+*.cdslck
+__pycache__/
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+
+# Cadence / EM generated local runtime outputs.
+*.s2p
+*.s1p
+*.gds
+*.oa
+*.raw
+*.psf
+*.fsdb
+
+# Keep reproducible scripts/process files under vm_probe, but ignore captured text dumps.
+vm_probe/*.txt
+vm_probe/*.png
+vm_probe/*.b64

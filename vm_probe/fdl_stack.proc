@@ -1,0 +1,45 @@
+# Auto-generated from FDL stack for EMX.
+# Source stack uses microns; Cadence GDS layer mapping comes from smic13mmrf_1233.layermap.
+# FDL dielectric eLossTan is recorded in comments; this EMX 6.0 proc uses supported layer/conductor/via primitives.
+
+assume microns
+assume ohms/sq
+assume ohms/via
+
+define m1 = L61T0
+define m2 = L62T0
+define m3 = L63T0
+define m4 = L64T0
+define m5 = L65T0
+define m6 = L66T0
+define v1 = L70T0
+define v2 = L71T0
+define v3 = L72T0
+define v4 = L73T0
+define v5 = L74T0
+
+layer 725 11.9 1 4000 ohm-cm # Die1
+conductor 0.008 2.15517241 m1 # z=725 Copper
+layer 3.6 4 # Die3, tanD=0.01
+conductor 0.55 0.07 m2 # z=728.608 m2_7
+layer 0.1 7 # Die5, tanD=0.004
+conductor 0.195 0.188 m3 # z=729.258 m3_4
+layer 2.705 4 # Die6, tanD=0.01
+conductor 3 0.0062 m4 # z=732.158 m4_4
+layer 0.1 7 # Die9, tanD=0.004
+layer 2.9 4 # Die10, tanD=0.01
+conductor 3 0.0062 m5 # z=738.158 m5_3
+layer 0.07 7 # Die13, tanD=0.004
+layer 0.4 4 # Die14, tanD=0.01
+layer 0.4 7 # Die15, tanD=0.004
+conductor 1.25 0.032 m6 # z=742.028 m6_3
+layer 0.4 4 # Die16
+layer 0.4 7 # Die17
+layer 1.2 1 # Die18
+layer infinity 1 # air
+
+via m1 m2 58000000 v1
+via m2 m3 0.09 Ohms/via v2
+via m3 m4 0.09 Ohms/via v3
+via m4 m5 0.026 Ohms/via v4
+via m5 m6 0.032 Ohms/via v5
